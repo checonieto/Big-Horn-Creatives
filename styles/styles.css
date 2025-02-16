@@ -1,0 +1,226 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header and Navigation Styles */
+header {
+  background: #2c3e50; /* Dark blue-gray */
+  padding: 1rem 0;
+  position: relative; /* Ensure the header stays in the document flow */
+  z-index: 1000; /* High z-index to keep it on top */
+}
+
+nav {
+  display: flex;
+  flex-direction: column; /* Stack logo and links vertically */
+  align-items: center; /* Center everything horizontally */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo-container {
+  text-align: center; /* Center the logo */
+}
+
+nav .logo {
+  max-width: 150px; /* Default size for larger screens */
+  width: 100%; /* Makes the logo responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* Space between menu items */
+  margin-top: 1rem; /* Add space between logo and links */
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #ecf0f1; /* Light gray */
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #3498db; /* Bright blue */
+  color: #fff;
+}
+
+nav ul li a:active,
+nav ul li a:focus {
+  background-color: #2980b9; /* Darker blue */
+}
+
+/* Active Page Link */
+nav ul li a.active {
+  background-color: #3498db; /* Bright blue */
+  color: #fff;
+}
+
+/* Adjust logo size for smaller screens */
+@media (max-width: 768px) {
+  nav .logo {
+    max-width: 120px; /* Smaller size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo {
+    max-width: 100px; /* Even smaller size for mobile */
+  }
+  nav ul {
+    flex-direction: column; /* Stack links vertically on small screens */
+    gap: 0.5rem;
+  }
+}
+
+/* Active Page Link */
+nav ul li a.active {
+  background-color: #3498db; /* Bright blue */
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  height: 400px;
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  margin-top: 60px; /* Add space for the navigation menu */
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place the image behind the text */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Freelancers Section */
+.featured-freelancers, .freelancers {
+  padding: 2rem;
+  text-align: center;
+  margin-top: 60px; /* Add space for the navigation menu */
+}
+
+.freelancers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.freelancer-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.freelancer-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 0.5rem 1rem;
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer and Social Icons */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.5rem;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
