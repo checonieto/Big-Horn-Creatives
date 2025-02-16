@@ -25,7 +25,7 @@
       "rating": 4.9,
       "image": "images/d3.jpg",
       "portfolio": "https://alexjohnson.com"
-    }
+    },
  {
       "id": 4,
       "name": "Mike Martinez",
@@ -34,7 +34,7 @@
       "rating": 4.9,
       "image": "images/d4.jpg",
       "portfolio": "https://alexjohnson.com"
-    }
+    },
      {
       "id": 5,
       "name": "Brandon Perez",
