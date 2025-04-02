@@ -1,9 +1,11 @@
 // Fetch freelancer data from JSON file
 async function fetchFreelancers() {
   try {
-    const response = await fetch('/data/freelancers.json'); // Ensure correct path
+    const response = await fetch('./data/freelancers.json'); // Correct path
     if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-    return await response.json();
+    const data = await response.json();
+    console.log('Fetched freelancers:', data); // Log the fetched data
+    return data;
   } catch (error) {
     console.error('Error fetching freelancers:', error);
     return []; // Return empty array to prevent errors
@@ -27,7 +29,7 @@ function displayFreelancers(freelancers, containerId) {
     .map(
       (freelancer) => `
       <div class="freelancer-card">
-        <img src="${freelancer.image || 'default-avatar.png'}" alt="${freelancer.name}" loading="lazy">
+        <img src="${freelancer.image || 'images/default-avatar.png'}" alt="${freelancer.name}" loading="lazy">
         <h3>${freelancer.name}</h3>
         <p><strong>Skills:</strong> ${freelancer.skills?.join(', ') || 'N/A'}</p>
         <p><strong>Location:</strong> ${freelancer.location || 'Unknown'}</p>
@@ -38,6 +40,7 @@ function displayFreelancers(freelancers, containerId) {
     )
     .join('');
 }
+
 // Filter freelancers based on search input
 function filterFreelancers(freelancers) {
   const searchInput = document.getElementById('search');

@@ -1,29 +1,47 @@
 [
-    {
-      "id": 1,
-      "name": "John Doe",
-      "skills": ["Graphic Design", "Branding"],
-      "location": "New York, NY",
-      "rating": 4.8,
-      "image": "images/d1.jpg",
-      "portfolio": "https://johndoe.com"
-    },
-    {
-      "id": 2,
-      "name": "Jane Smith",
-      "skills": ["Video Editing", "Motion Graphics"],
-      "location": "Los Angeles, CA",
-      "rating": 4.7,
-      "image": "images/d2.jpg",
-      "portfolio": "https://janesmith.com"
-    },
-    {
-      "id": 3,
-      "name": "Alex Johnson",
-      "skills": ["UI/UX Design", "Web Development"],
-      "location": "Chicago, IL",
-      "rating": 4.9,
-      "image": "images/d3.jpg",
-      "portfolio": "https://alexjohnson.com"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "John Doe",
+    "skills": ["Graphic Design", "Branding"],
+    "location": "New York, NY",
+    "rating": 4.8,
+    "image": "images/d1.jpg",
+    "portfolio": "https://johndoe.com"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "skills": ["Video Editing", "Motion Graphics"],
+    "location": "Los Angeles, CA",
+    "rating": 4.7,
+    "image": "images/d2.jpg",
+    "portfolio": "https://janesmith.com"
+  },
+  {
+    "id": 3,
+    "name": "Alex Johnson",
+    "skills": ["UI/UX Design", "Web Development"],
+    "location": "Chicago, IL",
+    "rating": 4.9,
+    "image": "images/d3.jpg",
+    "portfolio": "https://alexjohnson.com"
+  },
+{
+    "id": 4,
+    "name": "Mike Martinez",
+    "skills": ["UI/UX Design", "Web Development", "Branding"],
+    "location": "Chicago, IL",
+    "rating": 4.9,
+    "image": "images/d4.jpg",
+    "portfolio": "https://alexjohnson.com"
+  },
+   {
+    "id": 5,
+    "name": "Brenda Perez",
+    "skills": ["UI/UX Design", "Web Development", "Video Editing"],
+    "location": "Chicago, IL",
+    "rating": 4.9,
+    "image": "images/d5.jpg",
+    "portfolio": "https://alexjohnson.com"
+  }
+]
