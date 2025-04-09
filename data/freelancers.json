@@ -5,8 +5,10 @@
     "skills": ["Graphic Design", "Branding"],
     "location": "New York, NY",
     "rating": 4.8,
+    "rate": "$75/hr",
     "image": "images/d1.jpg",
-    "portfolio": "https://johndoe.com"
+    "portfolio": "https://johndoe.com",
+    "experience": "5 years"
   },
   {
     "id": 2,
@@ -14,8 +16,10 @@
     "skills": ["Video Editing", "Motion Graphics"],
     "location": "Los Angeles, CA",
     "rating": 4.7,
+    "rate": "$85/hr",
     "image": "images/d2.jpg",
-    "portfolio": "https://janesmith.com"
+    "portfolio": "https://janesmith.com",
+    "experience": "7 years"
   },
   {
     "id": 3,
@@ -23,25 +27,141 @@
     "skills": ["UI/UX Design", "Web Development"],
     "location": "Chicago, IL",
     "rating": 4.9,
+    "rate": "$90/hr",
     "image": "images/d3.jpg",
-    "portfolio": "https://alexjohnson.com"
+    "portfolio": "https://alexjohnson.com",
+    "experience": "8 years"
   },
-{
+  {
     "id": 4,
     "name": "Mike Martinez",
     "skills": ["UI/UX Design", "Web Development", "Branding"],
     "location": "Chicago, IL",
     "rating": 4.9,
+    "rate": "$80/hr",
     "image": "images/d4.jpg",
-    "portfolio": "https://alexjohnson.com"
+    "portfolio": "https://mikemartinez.com",
+    "experience": "6 years"
   },
-   {
+  {
     "id": 5,
     "name": "Brenda Perez",
     "skills": ["UI/UX Design", "Web Development", "Video Editing"],
     "location": "Chicago, IL",
     "rating": 4.9,
+    "rate": "$95/hr",
     "image": "images/d5.jpg",
-    "portfolio": "https://alexjohnson.com"
+    "portfolio": "https://brendaperez.com",
+    "experience": "9 years"
+  },
+  {
+    "id": 6,
+    "name": "Sarah Williams",
+    "skills": ["Illustration", "Character Design"],
+    "location": "Austin, TX",
+    "rating": 4.6,
+    "rate": "$70/hr",
+    "image": "images/d6.jpg",
+    "portfolio": "https://sarahwilliamsart.com",
+    "experience": "4 years"
+  },
+  {
+    "id": 7,
+    "name": "David Kim",
+    "skills": ["3D Animation", "VFX"],
+    "location": "San Francisco, CA",
+    "rating": 4.8,
+    "rate": "$100/hr",
+    "image": "images/d7.jpg",
+    "portfolio": "https://davidkimvfx.com",
+    "experience": "10 years"
+  },
+  {
+    "id": 8,
+    "name": "Emily Chen",
+    "skills": ["Photography", "Photo Editing"],
+    "location": "Seattle, WA",
+    "rating": 4.7,
+    "rate": "$65/hr",
+    "image": "images/d8.jpg",
+    "portfolio": "https://emilychenphoto.com",
+    "experience": "5 years"
+  },
+  {
+    "id": 9,
+    "name": "Robert Taylor",
+    "skills": ["Logo Design", "Typography"],
+    "location": "Boston, MA",
+    "rating": 4.5,
+    "rate": "$60/hr",
+    "image": "images/d9.jpg",
+    "portfolio": "https://roberttaylor.design",
+    "experience": "3 years"
+  },
+  {
+    "id": 10,
+    "name": "Lisa Wong",
+    "skills": ["Social Media Graphics", "Marketing"],
+    "location": "Denver, CO",
+    "rating": 4.6,
+    "rate": "$75/hr",
+    "image": "images/d10.jpg",
+    "portfolio": "https://lisawongcreates.com",
+    "experience": "4 years"
+  },
+  {
+    "id": 11,
+    "name": "James Wilson",
+    "skills": ["Frontend Development", "JavaScript"],
+    "location": "Atlanta, GA",
+    "rating": 4.9,
+    "rate": "$85/hr",
+    "image": "images/d11.jpg",
+    "portfolio": "https://jameswilson.dev",
+    "experience": "7 years"
+  },
+  {
+    "id": 12,
+    "name": "Olivia Brown",
+    "skills": ["Illustration", "Book Design"],
+    "location": "Portland, OR",
+    "rating": 4.7,
+    "rate": "$65/hr",
+    "image": "images/d12.jpg",
+    "portfolio": "https://oliviabrownart.com",
+    "experience": "5 years"
+  },
+  {
+    "id": 13,
+    "name": "Michael Lee",
+    "skills": ["Video Production", "Drone Videography"],
+    "location": "Miami, FL",
+    "rating": 4.8,
+    "rate": "$90/hr",
+    "image": "images/d13.jpg",
+    "portfolio": "https://michaelleeproductions.com",
+    "experience": "6 years"
+  },
+  {
+    "id": 14,
+    "name": "Sophia Garcia",
+    "skills": ["Web Design", "WordPress"],
+    "location": "Phoenix, AZ",
+    "rating": 4.6,
+    "rate": "$70/hr",
+    "image": "images/d14.jpg",
+    "portfolio": "https://sophiagarcia.design",
+    "experience": "4 years"
+  },
+  {
+    "id": 15,
+    "name": "Daniel Clark",
+    "skills": ["Mobile App Design", "Prototyping"],
+    "location": "Dallas, TX",
+    "rating": 4.9,
+    "rate": "$95/hr",
+    "image": "images/d15.jpg",
+    "portfolio": "https://danielclarkux.com",
+    "experience": "8 years"
   }
 ]

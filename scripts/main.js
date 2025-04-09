@@ -28,3 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.querySelector(".modal");
     if (modal) modal.remove();
   }
+  // Close modal when clicking X
+document.getElementById('close-modal').addEventListener('click', () => {
+  document.getElementById('freelancer-modal').style.display = 'none';
+});
+
+// Close modal when clicking outside content
+window.addEventListener('click', (e) => {
+  const modal = document.getElementById('freelancer-modal');
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});

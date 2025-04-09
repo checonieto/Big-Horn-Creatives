@@ -14,7 +14,7 @@
       <a href="index.html"><img src="images/logo.png" alt="Big Horn Creatives Logo" class="logo"></a>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="freelancers.html">Freelancers</a></li>
+        <li><a href="freelancers.html" class="active">Freelancers</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -22,12 +22,43 @@
   <main>
     <section class="freelancers">
       <h1>Freelancers</h1>
-      <input type="text" id="search" placeholder="Search by skill or location...">
+      
+      <!-- Filter controls -->
+      <div class="filters">
+        <div class="filter-group">
+          <label for="skills-filter">Filter by Skill:</label>
+          <select id="skills-filter">
+            <option value="all">All Skills</option>
+            <option value="Video Editing">Video Editing</option>
+            <option value="Motion Graphics">Motion Graphics</option>
+            <option value="Graphic Design">Graphic Design</option>
+            <option value="UI/UX Design">UI/UX Design</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Branding">Branding</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label for="location-filter">Filter by Location:</label>
+          <select id="location-filter">
+            <option value="all">All Locations</option>
+            <option value="New York, NY">New York</option>
+            <option value="Los Angeles, CA">Los Angeles</option>
+            <option value="Chicago, IL">Chicago</option>
+            <option value="Austin, TX">Austin</option>
+            <option value="San Francisco, CA">San Francisco</option>
+          </select>
+        </div>
+        
+        <button id="reset-filters" class="filter-button">Reset Filters</button>
+      </div>
+      
       <div id="freelancers-list" class="freelancers-grid"></div>
     </section>
   </main>
+  
   <footer>
-    <p>&copy; 2023 Big Horn Creatives</p>
+    <p>&copy; 2025 Big Horn Creatives</p>
     <a href="attributions.html">Attributions</a>
     <div class="social-icons">
       <a href="#"><img src="images/facebook.png" alt="Facebook" class="social-icon"></a>
@@ -35,6 +66,15 @@
       <a href="#"><img src="images/linkedin.png" alt="LinkedIn" class="social-icon"></a>
     </div>
   </footer>
+
+  <!-- Modal Structure -->
+  <div id="freelancer-modal" class="modal">
+    <div class="modal-content" id="modal-content">
+      <span id="close-modal" class="close-modal">&times;</span>
+      <!-- Modal content will be inserted here by JavaScript -->
+    </div>
+  </div>
+
   <script type="module" src="scripts/freelancers.js"></script>
 </body>
 </html>
