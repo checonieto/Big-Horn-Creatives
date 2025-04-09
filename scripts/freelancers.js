@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // State
   let freelancers = [];
 
-  // Fetch freelancers
+  // Fetch all my BISON freelancers
   async function fetchFreelancers() {
     try {
       const cached = getLocalStorage('freelancers');
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // Display freelancers
+  // Display all my BISON freelancers
   function displayFreelancers(freelancersToShow) {
     elements.container.innerHTML = freelancersToShow.map(freelancer => `
       <div class="freelancer-card" data-id="${freelancer.id}">
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     `).join('');
   }
 
-  // Filter functionality
+  // functionality
   function setupFilters() {
     function applyFilters() {
       const skill = elements.skillsFilter.value;
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       displayFreelancers(freelancers);
     });
 
-    // Initial filter
+    // filter
     applyFilters();
   }
 
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       elements.modal.style.display = 'block';
     }
 
-    // Event delegation for cards
+    // cards
     elements.container.addEventListener('click', (e) => {
       if (e.target.classList.contains('view-details')) {
         const card = e.target.closest('.freelancer-card');
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   }
 
-  // Initialize
+  // Start
   freelancers = await fetchFreelancers();
   if (freelancers.length) {
     setupFilters();
